@@ -1,0 +1,149 @@
+:root {
+  --butFont: 1.2rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 10%;
+  background-color: cadetblue;
+  border-bottom: 2px solid black;
+}
+.reset-but {
+  padding: 10px 20px;
+  height: min-content;
+  align-self: center;
+  border: none;
+  background-color: cornflowerblue;
+  color: black;
+  box-shadow: 0px 2px 5px black;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: cadetblue;
+  /* text-shadow: 0px 2px 5px white; */
+}
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.board-cont {
+  display: flex;
+  height: 90%;
+  width: 100%;
+}
+
+.human-side,
+.computer-side {
+  height: 100%;
+  width: 50%;
+  background-color: cadetblue;
+  border: 1px solid black;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.human-board,
+.computer-board {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  box-sizing: content-box;
+  height: 600px;
+  width: 600px;
+  background-color: white;
+  border: 5px solid blanchedalmond;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  background-color: aquamarine;
+  border: 1px solid white;
+}
+
+.tile.shipTile {
+  background-color: grey;
+}
+.tile.missTile {
+  background-color: rgb(0, 74, 149);
+}
+.tile.hitTile {
+  background-color: black;
+}
+.tile.sunkTile.hitTile {
+  background-color: red;
+}
+.game-over {
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.human-board-header,
+.computer-board-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.human-random,
+.computer-random {
+  display: none;
+  grid-column-start: 4;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  height: min-content;
+  align-self: center;
+}
+.human-board-header > h2,
+.computer-board-header > h2 {
+  grid-column-start: 3;
+}
+
+.human-place,
+.computer-place {
+  display: none;
+  grid-column-start: 2;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  height: min-content;
+  height: min-content;
+  align-self: center;
+}
+.display-place,
+.display-random {
+  display: block;
+}
