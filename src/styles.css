@@ -12,3 +12,97 @@
     "Helvetica Neue",
     sans-serif;
 }
+
+body > * {
+  padding: 100px;
+}
+
+main > h1 {
+  font-size: 4rem;
+}
+.card-cont {
+  margin-top: 20px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.card {
+  background-color: cornflowerblue;
+  height: 500px;
+  box-shadow: 2px 2px 5px;
+}
+
+.card-thumbnail {
+  height: 300px;
+  background-color: bisque;
+}
+
+.card-info {
+  padding: 20px;
+}
+.card-body {
+  margin-top: 1rem;
+}
+
+.card-icons img {
+  width: 30px;
+}
+.card-icons {
+  display: flex;
+  gap: 10px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-email > img,
+.footer-phone > img {
+  width: 30px;
+}
+
+.footer-email,
+.footer-phone {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-icon-links img {
+  width: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  padding-right: 50px;
+  font-size: 1.5rem;
+  color: black;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 400px;
+  max-width: 50%;
+  /* width: 50%; */
+}
+
+.footer-info > h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+footer > img {
+  max-width: 50%;
+  object-fit: cover;
+}
